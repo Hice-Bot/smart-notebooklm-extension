@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .btn {
+            padding: 12px 20px;
+            border: none;
+            background: #0b57d0;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 14px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .btn:hover {
+            background: #0842a0;
+        }
+
+        .btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        #status {
+            margin-top: 15px;
+            font-size: 13px;
+            color: #444;
+            word-wrap: break-word;
+        }
+
+        .links {
+            font-size: 12px;
+            margin-top: 20px;
+        }
+
+        .links a {
+            color: #0b57d0;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .nb-target {
+            font-weight: bold;
+            color: #0b57d0;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="margin-bottom: 15px;">
+        <h2>Smart NotebookLM</h2>
+        <p style="font-size:12px; color:#666;">Analyze page & Auto-assign</p>
+    </div>
+
+    <button id="processBtn" class="btn">Send to NotebookLM</button>
+    <div id="status"></div>
+    <div id="targetNb" class="nb-target"></div>
+
+    <div class="links">
+        <a href="#" id="optionsLink">Extension Settings</a>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+chrome-extension-skill/
+Example NotebookLLM Chrome Extension/
+ node_modules/
+ .env
+ .DS_Store

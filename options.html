@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; width: 400px; padding: 20px; }
+    h2 { color: #333; margin-top: 0; }
+    .form-group { margin-bottom: 5px; }
+    label { display: block; font-weight: bold; margin-bottom: 5px; }
+    input[type="text"], input[type="password"] { width: 100%; padding: 8px; box-sizing: border-box; }
+    .notebook-item { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 5px; background: #fafafa; }
+    .btn { padding: 10px 15px; border: none; background: #0078d4; color: #fff; cursor: pointer; border-radius: 4px; font-weight: bold; }
+    .btn-secondary { background: #6c757d; margin-top: 10px; }
+    #status { margin-top: 10px; color: green; display: none; }
+  </style>
+</head>
+<body>
+  <h2>Smart NotebookLM Settings</h2>
+  
+  <div class="form-group">
+    <label for="apiKey">Gemini API Key</label>
+    <input type="password" id="apiKey" placeholder="Enter your Google Gemini API Key">
+  </div>
+  
+  <hr>
+  <h3>Your Notebooks</h3>
+  <div id="notebooks-container"></div>
+  <button id="add-notebook" class="btn btn-secondary">+ Add Notebook</button>
+  <button id="sync-btn" class="btn btn-secondary" style="background:#28a745; margin-left: 10px;">Auto-Sync Notebooks</button>
+  <button id="save" class="btn" style="margin-left: 10px;">Save Configuration</button>
+  
+  <div id="status">Options saved successfully!</div>
+  
+  <script src="options.js"></script>
+</body>
+</html>
