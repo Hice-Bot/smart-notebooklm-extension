@@ -2,6 +2,9 @@
 
 > [!NOTE]
 > This repository contains the source code, assets, and landing page for the **Smart NotebookLM** Chrome Extension.
+> 
+> **🚨 IN DEVELOPMENT**: We are building a dual-method architecture to support both Consumer Mode (Zero-setup background scripts) and **Enterprise Mode (Official NotebookLM Enterprise API integration)**. 
+> *See [`docs/project_memory.md`](docs/project_memory.md) for the roadmap.*
 
 ---
 
